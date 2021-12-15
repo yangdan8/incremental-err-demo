@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "allowJs": false,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "composite": true,
+    "incremental": true,
+    "lib": ["esnext", "dom"]
+  },
+  "exclude": ["node_modules", "dist"]
+}

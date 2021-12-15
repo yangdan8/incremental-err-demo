@@ -1,0 +1,13 @@
+{
+  "name": "@demo/libs",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "main": "src/main.ts",
+  "devDependencies": {
+    "typescript": "^4.5.2",
+    "vue-tsc": "^0.29.8"
+  }
+}

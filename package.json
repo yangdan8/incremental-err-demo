@@ -1,0 +1,26 @@
+{
+  "name": "root",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "ins": "yarn install && lerna bootstrap",
+    "lint": "npm-run-all --parallel lint:*",
+    "lint:libs": "lerna exec --scope=@demo/libs \"npx vue-tsc --noEmit\"",
+    "lint:web": "lerna exec --scope=@demo/web \"npx vue-tsc --noEmit\"",
+    "lint-tsc": "npm-run-all --parallel lint-tsc:*",
+    "lint-tsc:libs": "lerna exec --scope=@demo/libs \"npx tsc --noEmit\"",
+    "lint-tsc:web": "lerna exec --scope=@demo/libs \"npx tsc --noEmit\""
+  },
+  "dependencies": {
+    "lerna": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.5.4"
+  }
+}
